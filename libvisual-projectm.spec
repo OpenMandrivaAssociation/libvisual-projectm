@@ -11,7 +11,6 @@ Source0: %{oname}-%{version}.tar.bz2
 License: LGPL
 Group: System/Libraries
 Url: http://xmms-projectm.sourceforge.net/
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: libvisual-devel
 BuildRequires: libprojectm-devel >= 1.0
 BuildRequires: libSDL-devel
