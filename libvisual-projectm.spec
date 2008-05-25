@@ -1,5 +1,5 @@
 %define name libvisual-projectm
-%define version 1.0
+%define version 1.1
 %define release %mkrel 1
 %define oname projectM-libvisual
 
@@ -13,7 +13,7 @@ Group: System/Libraries
 Url: http://xmms-projectm.sourceforge.net/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: libvisual-devel
-BuildRequires: libprojectm-devel >= 1.0
+BuildRequires: libprojectm-devel >= 1:1.1
 BuildRequires: libSDL-devel
 BuildRequires: cmake
 
