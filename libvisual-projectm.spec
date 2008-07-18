@@ -1,5 +1,5 @@
 %define name libvisual-projectm
-%define version 1.1
+%define version 1.2.0
 %define release %mkrel 1
 %define oname projectM-libvisual
 
