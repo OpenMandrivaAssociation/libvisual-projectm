@@ -1,20 +1,21 @@
 %define name libvisual-projectm
 %define version 2.0.1
-%define release %mkrel 3
+%define release 2
 %define oname projectM_libvisual
 
 Summary: Visualization module for libvisual based on projectM
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: %{oname}-%{version}-Source.tar.gz
+#new source file, from http://sourceforge.net/projects/projectm/files/2.1.0/
+Source0: http://downloads.sourceforge.net/project/projectm/2.1.0/%{oname}-%{version}-Source.tar.gz
 License: LGPLv2+
 Group: System/Libraries
 Url: http://xmms-projectm.sourceforge.net/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: libvisual-devel
+BuildRequires: pkgconfig(libvisual-0.4)
 BuildRequires: libprojectm-devel >= 1:2.0
-BuildRequires: libSDL-devel
+BuildRequires: pkgconfig(sdl)
 BuildRequires: cmake
 
 %description
@@ -37,17 +38,11 @@ cmake . -DCMAKE_INSTALL_PREFIX=%_prefix
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
-%defattr(-,root,root)
 %doc AUTHORS ChangeLog
 %dir %_libdir/libvisual-0.4/
 %dir %_libdir/libvisual-0.4/actor/
 %_libdir/libvisual-0.4/actor/libprojectM_libvisual.so
-
 
