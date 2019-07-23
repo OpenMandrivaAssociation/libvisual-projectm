@@ -6,7 +6,7 @@
 Summary: Visualization module for libvisual based on projectM
 Name: %{name}
 Version: %{version}
-Release: %{release}
+Release:	1
 #new source file, from http://sourceforge.net/projects/projectm/files/2.1.0/
 Source0: http://downloads.sourceforge.net/project/projectm/2.1.0/%{oname}-%{version}-Source.tar.gz
 License: LGPLv2+
