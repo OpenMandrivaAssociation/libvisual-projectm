@@ -11,7 +11,7 @@ Release:	1
 Source0: http://downloads.sourceforge.net/project/projectm/2.1.0/%{oname}-%{version}-Source.tar.gz
 License: LGPLv2+
 Group: System/Libraries
-Url: http://xmms-projectm.sourceforge.net/
+Url: https://xmms-projectm.sourceforge.net/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: pkgconfig(libvisual-0.4)
 BuildRequires: libprojectm-devel >= 1:2.0
